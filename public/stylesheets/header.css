@@ -1,0 +1,8 @@
+#headerContainer{
+    display: flex;
+    align-items: center;
+}
+#logo{
+    pointer-events: none;
+    font-size: 24px;
+}

@@ -1,0 +1,31 @@
+.img1{
+    width: 50px;
+    height: 50px;
+}
+.img2{
+    width: 60px;
+    height: 50px;
+}
+.Container{
+    display: flex;
+    width: 50%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+#myInfo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.rightContainer{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.rightContainer div{
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    align-items: center;
+}
