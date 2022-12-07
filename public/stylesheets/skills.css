@@ -2,19 +2,17 @@
     background-color: orange;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    height: 550px;
+    padding: 10px;
 }
 #frontend{
-    margin-left: 3%;
-    margin-right:3%;
+    margin-left: 2%;
+    margin-right:2%;
     background-color: white;
     width: 30%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 20px;
-    height: 450px;
 }
 #frontend #scss{
     width: 150px;
@@ -38,12 +36,30 @@
     border-radius: 20px;
     height: 450px;
 }
-#mongodb, #mariadb{
-    margin: 25px;
+#mongodb, #mariadb,#git-desktop,#git{
+    margin: 8px 25px;
     width: 200px;
     height: 65px;
 }
 #mySQL{
     width: 200px;
     height: 150px;
+}
+body{
+    margin: 0;
+}
+#versionControl{
+    background-color: white;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+    height: 450px;
+    margin-left: 2%;
+}
+#git{
+    margin: 8px 25px;
+    width: 150px;
+    height: 65px;
 }
