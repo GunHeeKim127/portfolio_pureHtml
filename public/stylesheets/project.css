@@ -5,6 +5,95 @@ body{
     width: 100%;
     background-color: aliceblue;
 }
+li {
+    list-style-type: none;
+  }
 #project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
     
 }
+#project_img_slider{
+    border-radius: 20px;
+    width: 400px;
+    height: 600px;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.slides {
+    /*이미지들이 담겨있는 슬라이드 컨테이너*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1600px; /* 슬라이드할 사진과 마진 총 넓이 */
+    transition: 0.5s ease-out; /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
+  }
+  .slides img{
+    width: 400px;
+    height: 500px;
+  }
+   /* 첫 번째 슬라이드 가운데에 정렬하기위해 첫번째 슬라이드만 margin-left조정 */
+  .slides li:first-child {
+    margin-left: 50px;
+  } /* 슬라이드들 옆으로 정렬 */
+  .slides li:not(:last-child) {
+    float: left;
+    margin-right: 160px;
+  }
+  .prev{
+    left:0;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+  .next{
+    left: 10%;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+  /* 이전, 다음 화살표에 마우스 커서가 올라가 있을때 */
+  .prev:hover,.next:hover {
+    background-color: rgba(128, 128, 128, 0.11);
+  }
+  /* 이전 화살표에 마우스 커서가 올라가 있을때 이전 화살표가 살짝 왼쪽으로 이동하는 효과*/
+  .prev:hover {
+    transform: translateX(-10px);
+  }
+  /* 다음 화살표에 마우스 커서가 올라가 있을때 이전 화살표가 살짝 오른쪽으로 이동하는 효과*/
+  .next:hover {
+    transform: translateX(10px);
+  }
+  #project_dermy1{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+  }
+  #rightContainer{
+    margin: 50px auto;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+  }
+  #project_information1{
+    margin-top:15px;
+    height: 285px;
+    width: 100%;
+  }
+  #project_information2{
+    height: 250px;
+    width: 100%;
+  }
