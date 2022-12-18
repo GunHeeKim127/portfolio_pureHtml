@@ -16,11 +16,12 @@
 #myInfo{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .rightContainer{
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 60%;
 }
 
 .rightContainer div{
@@ -31,4 +32,16 @@
 }
 body{
     overflow: hidden;
+}
+#email{
+    width: 65px;
+    height: 50px;
+}
+#location{
+    width: 60px;
+    height: 60px;
+}
+#study{
+    width: 100px;
+    height: 100px;
 }
