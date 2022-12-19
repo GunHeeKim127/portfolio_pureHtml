@@ -16,6 +16,15 @@ body{
     left: 50%;
     font-size: 24px;
     transform: translate(-50%,-50%);
+    width:100%;
+    text-align: center;
+}
+#myText div{
+    font-size: 50px;
+    font-weight: 600;
+}
+#myText p{
+    font-weight: bold;
 }
 #aboutMe{
     width: 100%;
