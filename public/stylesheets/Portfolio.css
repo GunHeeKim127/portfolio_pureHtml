@@ -1,8 +1,9 @@
 body{
+    position: relative;
     width: 100%;
     padding: 0;
     margin: 0;
-    overflow: scroll;
+    overflow: auto;
 }
 #imageContainer {
     width: 100%;
@@ -57,4 +58,16 @@ body{
     margin-right: 40px;
     width: 100%;
     background-color: rgba(235,235,235,1);
+}
+#middletext{
+    font-weight: 600;
+    color: darkblue;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    background-color: transparent;
+    z-index: 1;
 }

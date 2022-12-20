@@ -4,7 +4,7 @@ currentIdx = 0;
 slideCount = slideImg.length;
 prev = document.querySelector('.prev'); //이전 버튼
 next = document.querySelector('.next'); //다음 버튼
-slideWidth = 500; //슬라이드이미지 넓이
+slideWidth = 600; //슬라이드이미지 넓이
 slideMargin = 100; //슬라이드 끼리의 마진값
 makeClone(); // 처음이미지와 마지막 이미지 복사 함수
 initfunction(); //슬라이드 넓이와 위치값 초기화 함수
@@ -38,7 +38,6 @@ next.addEventListener('click', function () {
 });
 prev.addEventListener('click', function () {
   //이전 버튼 눌렀을때
-  console.log(currentIdx);
   if (currentIdx >= 0) {
     slides.style.left = -currentIdx * (slideWidth + slideMargin) + 'px';
     slides.style.transition = `${0.5}s ease-out`;

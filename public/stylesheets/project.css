@@ -17,10 +17,10 @@ li {
 }
 #project_img_slider{
     border-radius: 20px;
-    width: 400px;
+    width: 650px;
     height: 600px;
     position: relative;
-    margin: 50px auto;
+    margin: 0px 10px 0 0;
     overflow: hidden;
 }
 .slides {
@@ -28,20 +28,20 @@ li {
     position: absolute;
     left: 0;
     top: 0;
-    width: 1600px; /* 슬라이드할 사진과 마진 총 넓이 */
+    width: 2100px; /* 슬라이드할 사진과 마진 총 넓이 */
     transition: 0.5s ease-out; /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
   }
   .slides img{
-    width: 400px;
+    width: 550px;
     height: 500px;
   }
    /* 첫 번째 슬라이드 가운데에 정렬하기위해 첫번째 슬라이드만 margin-left조정 */
   .slides li:first-child {
-    margin-left: 50px;
+    margin-left: -35px;
   } /* 슬라이드들 옆으로 정렬 */
   .slides li:not(:last-child) {
     float: left;
-    margin-right: 160px;
+    margin-right: 150px;
   }
   .prev{
     left:0;
@@ -81,9 +81,11 @@ li {
     justify-content: center;
     background-color: white;
     border-radius: 20px;
+    padding: 0 25px;
+    flex-direction: column;
   }
   #rightContainer{
-    margin: 50px auto;
+    margin: 0px 0 0 10px;
     display: flex;
     width: 50%;
     flex-direction: column;
@@ -92,8 +94,23 @@ li {
     margin-top:15px;
     height: 285px;
     width: 100%;
+    border-bottom: 1px solid rgba(150,150,150,1);
   }
   #project_information2{
     height: 250px;
     width: 100%;
+    margin-top: 25px;
+  }
+  #project_title{
+    text-align: center;
+    width: 100%;
+    margin: 25px 0 10px 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  #portfoliosite{
+    cursor: pointer;
+  }
+  #portfoliosite:hover{
+    opacity: 0.5;
   }
