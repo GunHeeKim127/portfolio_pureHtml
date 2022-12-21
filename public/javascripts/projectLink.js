@@ -1,3 +1,3 @@
 function gotoLink(){
-    window.location = 'https://keen-lokum-b95609.netlify.app/';
+    window.open('https://keen-lokum-b95609.netlify.app/');
 }
