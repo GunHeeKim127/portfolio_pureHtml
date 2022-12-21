@@ -7,7 +7,6 @@ $(function(){
             href = $this.attr("href"),
             top = $(href).offset().top;
         var topY=top-80;
-            console.log(topY)
         window.scrollTo(0,topY)
        return false;
     });
